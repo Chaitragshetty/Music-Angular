@@ -1,5 +1,5 @@
 export class Tracks {
-  trackid:number;
-  name:string;
-  comments:string;
+  trackId:number;
+  trackName:string;
+  trackComments:string;
 }

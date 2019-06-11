@@ -26,8 +26,6 @@ export class WishlistComponent implements OnInit {
     });
 
   }
-
-
   public onClickDelete(track : Tracks){
     this.service.deletetrack(track).subscribe((data)=>{
       console.log(data);

@@ -36,8 +36,8 @@ export class MusicService {
     return this.http.get("http://localhost:8080/api/v1/track");
   }
 
-  deletetrack(track):any{
-    console.log(track);
-    return this.http.delete("http://localhost:8080/api/v1/track",track);
+  deletetrack(id):any{
+    console.log(id);
+    return this.http.delete(`http://localhost:8080/api/v1/track/${id}`,id);
   }
 }

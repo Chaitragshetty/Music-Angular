@@ -29,12 +29,12 @@ export class HomeComponent implements OnInit {
 
   addTrack(inputTrack) {
   
-    this.track.trackid=inputTrack.listeners;
-    console.log(this.track.trackid);  
-    this.track.name=inputTrack.name;
-    console.log(this.track.name); 
-    this.track.comments=inputTrack.artist.name;
-    console.log(this.track.comments);
+    this.track.trackId=inputTrack.listeners;
+    console.log(this.track.trackId);  
+    this.track.trackName=inputTrack.name;
+    console.log(this.track.trackName); 
+    this.track.trackComments=inputTrack.artist.name;
+    console.log(this.track.trackComments);
     console.log(this.track);
 
   this.musicService.addToWishlist(this.track).
