@@ -10,6 +10,7 @@ import {MusicService} from './music.service'
 import { HttpClientModule }    from '@angular/common/http';
 import { SearchComponent } from './search/search.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
+import { DetailsComponent } from './details/details.component';
 
 
 
@@ -20,7 +21,8 @@ import { WishlistComponent } from './wishlist/wishlist.component';
     NavbarComponent,
     HomeComponent,
     SearchComponent,
-    WishlistComponent
+    WishlistComponent,
+    DetailsComponent
     
   ],
   imports: [

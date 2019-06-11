@@ -1,0 +1,45 @@
+<!-- <mat-card > DETAILS </mat-card>
+<br />
+<mat-card class="container-fluid d-flex flex-wrap my-2"  fxLayout="row wrap" fxLayoutGap="32px" fxLayoutAlign="flex-start">
+<mat-card class="card col-sm-12 col-md-4 col-lg-3" style="width: 18rem;">
+  <mat-card-title>
+    {{arrayOfMusic.album.name}}
+  </mat-card-title>
+  <mat-card-content>
+    {{arrayOfMusic.album.artist}}
+  </mat-card-content>
+  <mat-card-content>
+    {{arrayOfMusic.album.listeners}}
+  </mat-card-content>
+  <mat-card-content>
+    {{arrayOfMusic.album.playcount}}
+  </mat-card-content>
+  <mat-card-actions align='end'>
+    <button mat-flat-button (click)="addToWishlist(music)"> ADD </button>
+    
+
+  </mat-card-actions>
+</mat-card> -->
+<div class="container-fluid">
+    <h2> Your DETAILS </h2>
+    <div class="container-fluid d-flex flex-wrap my-2">
+      <div class="card col-sm-12 col-md-4 col-lg-3" style="width: 18rem;" >
+        
+        <div class="card-body">
+          <h5 class="card-title">Music Name : {{arrayOfMusic.album.name}}</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Artist : {{arrayOfMusic.album.artist}}</li>
+        </ul>
+      
+        <div class="card-body">
+           <!-- <button class="btn btn-outline-primary mx-2" >Add to wishlist</button>  -->
+           
+           <!-- <button mat-flat-button (click)="addToWishlist(music)"> ADD </button> -->
+           <!-- <button mat-flat-button (click)="onClickDelete(track.trackId)"> DELETE </button> -->
+           <!-- <button mat-flat-button (click)="onClickDetails(track)"> DETAILS </button> -->
+          
+        </div>
+      </div>
+    </div>
+    </div>

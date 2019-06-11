@@ -26,6 +26,14 @@ export class HomeComponent implements OnInit {
     console.log("This Works");  
   }
 
+  getDetails(value): any{
+    this.route.navigateByUrl("/details/"+value.artist.name+"/"+value.name);
+    // console.log(value);
+    // this.musicService.getDetails(value);
+  }
+
+
+
 
   addTrack(inputTrack) {
   

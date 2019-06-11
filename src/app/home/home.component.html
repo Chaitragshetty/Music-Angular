@@ -28,10 +28,12 @@
       </ul>
       <div class="card-body">
          <!-- <button class="btn btn-outline-primary mx-2" > ADD </button> -->
-         <button class="btn btn-outline-primary mx-2" > DETAILS </button> 
+         <button mat-flat-button (click)="getDetails(music)"> DETAILS </button>
+         <!-- <button class="btn btn-outline-primary mx-2" > DETAILS </button>  -->
          <nav>
            <router-outlet></router-outlet>
           <a routerLink="/wishlist" routerLinkActive="active" (click)="addTrack(music)">Add to wishlist</a>
+
         </nav>
  
       </div>
