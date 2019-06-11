@@ -1,0 +1,52 @@
+<div class="container-fluid">
+      <h2> Your WishList </h2>
+      <div class="container-fluid d-flex flex-wrap my-2">
+        <div class="card col-sm-12 col-md-4 col-lg-3" style="width: 18rem;" *ngFor="let track of tracks">
+          
+          <div class="card-body">
+            <h5 class="card-title">Music Name : {{track.name}}</h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Artist : {{track.comments}}</li>
+          </ul>
+          <div class="card-body">
+             <!-- <button class="btn btn-outline-primary mx-2" >Add to wishlist</button>  -->
+             
+             <!-- <button mat-flat-button (click)="addToWishlist(music)"> ADD </button> -->
+             <button mat-flat-button (click)="onClickDelete(track)"> DELETE </button>
+             <!-- <button mat-flat-button (click)="onClickDetails(track)"> DETAILS </button> -->
+            
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- <card > WISH LIST </card>
+<br />
+<mcard class="container-fluid d-flex flex-wrap my-2"  fxLayout="row wrap" fxLayoutGap="32px" fxLayoutAlign="flex-start">
+<card class="card col-sm-12 col-md-4 col-lg-3" *ngFor="let music of arrayOfMusic" style="width: 18rem;">
+  <card-title>
+    {{music.name}}
+  </card-title>
+  <card-content>
+    {{music.artist}}
+  </card-content>
+  <card-actions align='end'>
+    <button mat-flat-button (click)="addToWishlist(music)"> ADD </button>
+    <button mat-flat-button> DETAILS </button>
+
+  </card-actions>
+</card> -->
+
+ <!-- <body>
+    <div class="container-fluid" *ngIf="allTracks">
+    <div class ="row">
+       <div class="col-md-4" *ngFor="let track of allTracks">
+             <img  src="{{track.trackImage}}"style="width: 250px;;height:250px"><br>
+             trackId:  {{track.trackId}}<br>
+             {{track.trackName}}<br>
+             {{track.trackComment}}
+          <app-update [track]="track"></app-update><br>
+       </div>
+    </div>
+    </div>
+    </body>     -->
